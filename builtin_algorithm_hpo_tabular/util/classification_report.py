@@ -199,7 +199,7 @@ def plot_roc_curve(
     plt.style.use(plot_style)
     ax.set_aspect(aspect=0.95)
     ax.plot(metrics_FPR, metrics_TPR, color='b', linewidth=0.7)
-    ax.fill_between(metrics_FPR, metrics_TPR, step='post', alpha=0.2,color='b')
+    ax.fill_between(metrics_FPR, metrics_TPR, alpha=0.2, color='b')
     ax.plot([0, 1], [0, 1], color='k', linestyle='--', linewidth=1)
     ax.set_xlim([-0.05, 1.0])
     ax.set_ylim([0.0, 1.05])
